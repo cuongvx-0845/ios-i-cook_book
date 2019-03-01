@@ -2,9 +2,6 @@
 //  AppViewModel.swift
 
 import Foundation
-import RxSwift
-import RxCocoa
-import MGArchitecture
 
 struct AppViewModel {
     let navigator: AppNavigatorType

@@ -2,9 +2,6 @@
 //  APIService.swift
 
 import Foundation
-import RxSwift
-import Alamofire
-import ObjectMapper
 
 struct APIService {
     
@@ -34,26 +31,25 @@ struct APIService {
                 .responseJSON { response in
                     switch response.result {
                     case .success(let value):
-                        if let statusCode = response.response?.statusCode {
-                            if statusCode == 200 {
-                                if let object = Mapper<T>().map(JSONObject: value) {
-                                    observer.onNext(object)
-                                }
-                            } else {
-                                if let object = Mapper<ErrorResponse>().map(JSONObject: value) {
-                                    observer.onError(BaseError.apiFailure(error: object))
-                                } else {
-                                    observer.onError(BaseError.httpError(httpCode: statusCode))
-                                }
+                        guard let statusCode = response.response?.statusCode else {
+                            observer.onError(BaseError.unexpectedError)
+                            return
+                        }
+                        if statusCode == 200 {
+                            if let object = Mapper<T>().map(JSONObject: value) {
+                                observer.onNext(object)
                             }
                         } else {
-                            observer.on(.error(BaseError.unexpectedError))
+                            guard let object = Mapper<ErrorResponse>().map(JSONObject: value) else {
+                                observer.onError(BaseError.httpError(httpCode: statusCode))
+                                return
+                            }
+                            observer.onError(BaseError.apiFailure(error: object))
                         }
                         observer.onCompleted()
                         
                     case .failure:
                         observer.onError(BaseError.networkError)
-                        observer.onCompleted()
                     }
             }
             return Disposables.create()

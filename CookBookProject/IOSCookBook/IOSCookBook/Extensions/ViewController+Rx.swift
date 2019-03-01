@@ -2,12 +2,13 @@
 //  ViewController+.swift
 
 import Foundation
-import RxSwift
-import RxCocoa
-import MBProgressHUD
+
+private struct constants {
+    static let hudOffsetY: CGFloat = -25
+}
 
 extension Reactive where Base: UIViewController {
-    
+
     var error: Binder<Error> {
         return Binder(base) { viewController, error in
             viewController.showError(message: error.localizedDescription)
@@ -18,7 +19,7 @@ extension Reactive where Base: UIViewController {
         return Binder(base) { viewController, isLoading in
             if isLoading {
                 let hud = MBProgressHUD.showAdded(to: viewController.view, animated: true)
-                hud.offset.y = -30
+                hud.offset.y = constants.hudOffsetY
             } else {
                 MBProgressHUD.hide(for: viewController.view, animated: true)
             }

@@ -2,8 +2,6 @@
 //  AppNavigator.swift
 
 import Foundation
-import RxSwift
-import RxCocoa
 
 protocol AppNavigatorType {
     func toMain()
