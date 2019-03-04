@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+<<<<<<< HEAD
+      location = "self:IOSCookBook.xcodeproj">
+=======
+<<<<<<< HEAD
+      location = "self:IOSCookBook.xcodeproj">
+=======
+      location = "self:SimpleDemoCleanArchitecture.xcodeproj">
+>>>>>>> 1
+>>>>>>> 48154e3... Add file Left
+   </FileRef>
+</Workspace>
