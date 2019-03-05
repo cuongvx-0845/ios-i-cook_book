@@ -20,7 +20,7 @@
                         <color key="backgroundColor" red="0.88438585069444442" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="cVO-cx-iZU"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="homegrey" selectedImage="homeorange" id="cVO-cx-iZU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,7 +36,7 @@
                         <color key="backgroundColor" red="0.24348958333333334" green="0.1609157986111111" blue="0.24205186631944445" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="cjd-e0-ByQ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Category" id="YPA-U3-4J5"/>
+                    <tabBarItem key="tabBarItem" title="Category" image="kindgrey" selectedImage="kindorange" id="YPA-U3-4J5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uaf-25-dAA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,7 +52,7 @@
                         <color key="backgroundColor" red="0.68155924479166663" green="0.65744357638888884" blue="0.24205186631944445" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="18K-Qs-LLO"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Favorite" id="yVs-0r-Q1J"/>
+                    <tabBarItem key="tabBarItem" title="Favorite" image="heartGrey" selectedImage="heartOrange" id="yVs-0r-Q1J"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRD-bZ-avH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -64,6 +64,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="RLE-C3-DxR" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lOy-Pf-407">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -78,4 +79,12 @@
             <point key="canvasLocation" x="-580" y="-287"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="heartGrey" width="24" height="24"/>
+        <image name="heartOrange" width="18" height="16"/>
+        <image name="homegrey" width="24" height="24"/>
+        <image name="homeorange" width="18" height="15"/>
+        <image name="kindgrey" width="24" height="24"/>
+        <image name="kindorange" width="15" height="18"/>
+    </resources>
 </document>
