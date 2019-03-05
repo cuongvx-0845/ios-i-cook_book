@@ -10,6 +10,10 @@
 		714C2ECD221F83AC001F98FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2ECC221F83AC001F98FD /* AppDelegate.swift */; };
 		714C2ED2221F83AC001F98FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714C2ED0221F83AC001F98FD /* Main.storyboard */; };
 		714C2ED4221F83AE001F98FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714C2ED3221F83AE001F98FD /* Assets.xcassets */; };
+<<<<<<< HEAD
+=======
+		714C2ED7221F83AE001F98FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714C2ED5221F83AE001F98FD /* LaunchScreen.storyboard */; };
+>>>>>>> Initial API and get Category Data
 		714C2EE1221F86B6001F98FD /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EE0221F86B6001F98FD /* AppViewModel.swift */; };
 		714C2EE3221F86C1001F98FD /* AppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EE2221F86C1001F98FD /* AppNavigator.swift */; };
 		714C2EE5221F86D0001F98FD /* AppUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EE4221F86D0001F98FD /* AppUseCase.swift */; };
@@ -18,6 +22,7 @@
 		714C2EF0221F8EC1001F98FD /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EEF221F8EC1001F98FD /* MainNavigator.swift */; };
 		714C2EF2221F8ECA001F98FD /* MainUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EF1221F8ECA001F98FD /* MainUseCase.swift */; };
 		714C2EF4221F8ED6001F98FD /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EF3221F8ED6001F98FD /* MainViewModel.swift */; };
+<<<<<<< HEAD
 		714C2EF9221F9238001F98FD /* GithubRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EF8221F9238001F98FD /* GithubRepo.swift */; };
 		714C2F02221F9461001F98FD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F01221F9461001F98FD /* APIService.swift */; };
 		714C2F0D221F97AA001F98FD /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F0C221F97AA001F98FD /* BaseRequest.swift */; };
@@ -31,6 +36,23 @@
 		714C2F1D221FC8E4001F98FD /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F1C221FC8E4001F98FD /* BaseModel.swift */; };
 		714C2F21221FCAC6001F98FD /* GithubRepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F1F221FCAC6001F98FD /* GithubRepoCell.swift */; };
 		714C2F22221FCAC6001F98FD /* GithubRepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 714C2F20221FCAC6001F98FD /* GithubRepoCell.xib */; };
+=======
+		714C2EF9221F9238001F98FD /* CategoryRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EF8221F9238001F98FD /* CategoryRepo.swift */; };
+		714C2F02221F9461001F98FD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F01221F9461001F98FD /* APIService.swift */; };
+		714C2F08221F96F1001F98FD /* CustomRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F07221F96F1001F98FD /* CustomRequestAdapter.swift */; };
+		714C2F0B221F9744001F98FD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F0A221F9744001F98FD /* Constants.swift */; };
+		714C2F0D221F97AA001F98FD /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F0C221F97AA001F98FD /* BaseRequest.swift */; };
+		714C2F0F221F97F8001F98FD /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F0E221F97F8001F98FD /* URLs.swift */; };
+		714C2F11221F983F001F98FD /* CategoryRepoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F10221F983F001F98FD /* CategoryRepoRequest.swift */; };
+		714C2F13221F988A001F98FD /* CategoryRepoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F12221F988A001F98FD /* CategoryRepoResponse.swift */; };
+		714C2F15221F9979001F98FD /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F14221F9979001F98FD /* BaseError.swift */; };
+		714C2F17221F9999001F98FD /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F16221F9999001F98FD /* ErrorResponse.swift */; };
+		714C2F19221FB323001F98FD /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F18221FB323001F98FD /* HTTPStatusCode.swift */; };
+		714C2F1B221FC7D2001F98FD /* CategoryRepoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F1A221FC7D2001F98FD /* CategoryRepoRepository.swift */; };
+		714C2F1D221FC8E4001F98FD /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F1C221FC8E4001F98FD /* BaseModel.swift */; };
+		714C2F21221FCAC6001F98FD /* CategoryRepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F1F221FCAC6001F98FD /* CategoryRepoCell.swift */; };
+		714C2F22221FCAC6001F98FD /* CategoryRepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 714C2F20221FCAC6001F98FD /* CategoryRepoCell.xib */; };
+>>>>>>> Initial API and get Category Data
 		714C2F25221FCD5D001F98FD /* ViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F24221FCD5D001F98FD /* ViewController+Rx.swift */; };
 		714C2F27221FCDE2001F98FD /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F26221FCDE2001F98FD /* UIViewController+.swift */; };
 		714C2F2A221FD75F001F98FD /* RepoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F29221FD75F001F98FD /* RepoDetailViewModel.swift */; };
@@ -41,13 +63,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		0434A1222229225800DE299B /* IOSCookBook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IOSCookBook-Bridging-Header.h"; sourceTree = "<group>"; };
+=======
+>>>>>>> Initial API and get Category Data
 		37869304476713634AA3A366 /* Pods-SimpleDemoCleanArchitecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleDemoCleanArchitecture.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleDemoCleanArchitecture/Pods-SimpleDemoCleanArchitecture.release.xcconfig"; sourceTree = "<group>"; };
 		5BD36DC1B11198D43E3DE2E5 /* Pods-SimpleDemoCleanArchitecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleDemoCleanArchitecture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleDemoCleanArchitecture/Pods-SimpleDemoCleanArchitecture.debug.xcconfig"; sourceTree = "<group>"; };
 		714C2EC9221F83AC001F98FD /* IOSCookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSCookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		714C2ECC221F83AC001F98FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		714C2ED1221F83AC001F98FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		714C2ED3221F83AE001F98FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		714C2ED6221F83AE001F98FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+>>>>>>> Initial API and get Category Data
 		714C2ED8221F83AE001F98FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		714C2EE0221F86B6001F98FD /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		714C2EE2221F86C1001F98FD /* AppNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigator.swift; sourceTree = "<group>"; };
@@ -57,6 +86,7 @@
 		714C2EEF221F8EC1001F98FD /* MainNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
 		714C2EF1221F8ECA001F98FD /* MainUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUseCase.swift; sourceTree = "<group>"; };
 		714C2EF3221F8ED6001F98FD /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		714C2EF8221F9238001F98FD /* GithubRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepo.swift; sourceTree = "<group>"; };
 		714C2F01221F9461001F98FD /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		714C2F0C221F97AA001F98FD /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\U0010BaseRequest.swift"; sourceTree = "<group>"; };
@@ -70,6 +100,23 @@
 		714C2F1C221FC8E4001F98FD /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		714C2F1F221FCAC6001F98FD /* GithubRepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepoCell.swift; sourceTree = "<group>"; };
 		714C2F20221FCAC6001F98FD /* GithubRepoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GithubRepoCell.xib; sourceTree = "<group>"; };
+=======
+		714C2EF8221F9238001F98FD /* CategoryRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepo.swift; sourceTree = "<group>"; };
+		714C2F01221F9461001F98FD /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		714C2F07221F96F1001F98FD /* CustomRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRequestAdapter.swift; sourceTree = "<group>"; };
+		714C2F0A221F9744001F98FD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		714C2F0C221F97AA001F98FD /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\U0010BaseRequest.swift"; sourceTree = "<group>"; };
+		714C2F0E221F97F8001F98FD /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		714C2F10221F983F001F98FD /* CategoryRepoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepoRequest.swift; sourceTree = "<group>"; };
+		714C2F12221F988A001F98FD /* CategoryRepoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepoResponse.swift; sourceTree = "<group>"; };
+		714C2F14221F9979001F98FD /* BaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
+		714C2F16221F9999001F98FD /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		714C2F18221FB323001F98FD /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		714C2F1A221FC7D2001F98FD /* CategoryRepoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepoRepository.swift; sourceTree = "<group>"; };
+		714C2F1C221FC8E4001F98FD /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		714C2F1F221FCAC6001F98FD /* CategoryRepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepoCell.swift; sourceTree = "<group>"; };
+		714C2F20221FCAC6001F98FD /* CategoryRepoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryRepoCell.xib; sourceTree = "<group>"; };
+>>>>>>> Initial API and get Category Data
 		714C2F24221FCD5D001F98FD /* ViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Rx.swift"; sourceTree = "<group>"; };
 		714C2F26221FCDE2001F98FD /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		714C2F29221FD75F001F98FD /* RepoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailViewModel.swift; sourceTree = "<group>"; };
@@ -118,8 +165,13 @@
 				714C2EF6221F91AE001F98FD /* Platform */,
 				714C2EDE221F868C001F98FD /* Scenes */,
 				714C2ECC221F83AC001F98FD /* AppDelegate.swift */,
+<<<<<<< HEAD
 				0434A1222229225800DE299B /* IOSCookBook-Bridging-Header.h */,
 				714C2ED3221F83AE001F98FD /* Assets.xcassets */,
+=======
+				714C2ED3221F83AE001F98FD /* Assets.xcassets */,
+				714C2ED5221F83AE001F98FD /* LaunchScreen.storyboard */,
+>>>>>>> Initial API and get Category Data
 				714C2ED8221F83AE001F98FD /* Info.plist */,
 			);
 			path = IOSCookBook;
@@ -140,8 +192,13 @@
 			isa = PBXGroup;
 			children = (
 				714C2EE0221F86B6001F98FD /* AppViewModel.swift */,
+<<<<<<< HEAD
 				714C2EE2221F86C1001F98FD /* AppNavigator.swift */,
 				714C2EE4221F86D0001F98FD /* AppUseCase.swift */,
+=======
+				714C2EE4221F86D0001F98FD /* AppUseCase.swift */,
+				714C2EE2221F86C1001F98FD /* AppNavigator.swift */,
+>>>>>>> Initial API and get Category Data
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -188,7 +245,11 @@
 			isa = PBXGroup;
 			children = (
 				714C2F1C221FC8E4001F98FD /* BaseModel.swift */,
+<<<<<<< HEAD
 				714C2EF8221F9238001F98FD /* GithubRepo.swift */,
+=======
+				714C2EF8221F9238001F98FD /* CategoryRepo.swift */,
+>>>>>>> Initial API and get Category Data
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -196,7 +257,11 @@
 		714C2EFA221F92C3001F98FD /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				714C2F1A221FC7D2001F98FD /* GithubRepoRepository.swift */,
+=======
+				714C2F1A221FC7D2001F98FD /* CategoryRepoRepository.swift */,
+>>>>>>> Initial API and get Category Data
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -223,8 +288,14 @@
 		714C2F04221F96CA001F98FD /* Request */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				714C2F0C221F97AA001F98FD /* BaseRequest.swift */,
 				714C2F10221F983F001F98FD /* GithubRepoRequest.swift */,
+=======
+				714C2F07221F96F1001F98FD /* CustomRequestAdapter.swift */,
+				714C2F0C221F97AA001F98FD /* BaseRequest.swift */,
+				714C2F10221F983F001F98FD /* CategoryRepoRequest.swift */,
+>>>>>>> Initial API and get Category Data
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -232,7 +303,11 @@
 		714C2F05221F96D5001F98FD /* Response */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				714C2F12221F988A001F98FD /* GithubRepoResponse.swift */,
+=======
+				714C2F12221F988A001F98FD /* CategoryRepoResponse.swift */,
+>>>>>>> Initial API and get Category Data
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -250,6 +325,10 @@
 		714C2F09221F971E001F98FD /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+=======
+				714C2F0A221F9744001F98FD /* Constants.swift */,
+>>>>>>> Initial API and get Category Data
 				714C2F0E221F97F8001F98FD /* URLs.swift */,
 			);
 			path = Utils;
@@ -258,8 +337,13 @@
 		714C2F1E221FCA9E001F98FD /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				714C2F1F221FCAC6001F98FD /* GithubRepoCell.swift */,
 				714C2F20221FCAC6001F98FD /* GithubRepoCell.xib */,
+=======
+				714C2F1F221FCAC6001F98FD /* CategoryRepoCell.swift */,
+				714C2F20221FCAC6001F98FD /* CategoryRepoCell.xib */,
+>>>>>>> Initial API and get Category Data
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -362,7 +446,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				714C2F22221FCAC6001F98FD /* GithubRepoCell.xib in Resources */,
+=======
+				714C2F22221FCAC6001F98FD /* CategoryRepoCell.xib in Resources */,
+				714C2ED7221F83AE001F98FD /* LaunchScreen.storyboard in Resources */,
+>>>>>>> Initial API and get Category Data
 				714C2ED4221F83AE001F98FD /* Assets.xcassets in Resources */,
 				714C2ED2221F83AC001F98FD /* Main.storyboard in Resources */,
 			);
@@ -453,11 +542,21 @@
 				714C2EE8221F8951001F98FD /* StoryBoards.swift in Sources */,
 				714C2F0F221F97F8001F98FD /* URLs.swift in Sources */,
 				714C2F15221F9979001F98FD /* BaseError.swift in Sources */,
+<<<<<<< HEAD
 				714C2F2C221FD76E001F98FD /* RepoDetailUseCase.swift in Sources */,
 				714C2F19221FB323001F98FD /* HTTPStatusCode.swift in Sources */,
 				714C2EF9221F9238001F98FD /* GithubRepo.swift in Sources */,
 				714C2F11221F983F001F98FD /* GithubRepoRequest.swift in Sources */,
 				714C2F1B221FC7D2001F98FD /* GithubRepoRepository.swift in Sources */,
+=======
+				714C2F0B221F9744001F98FD /* Constants.swift in Sources */,
+				714C2F2C221FD76E001F98FD /* RepoDetailUseCase.swift in Sources */,
+				714C2F19221FB323001F98FD /* HTTPStatusCode.swift in Sources */,
+				714C2EF9221F9238001F98FD /* CategoryRepo.swift in Sources */,
+				714C2F11221F983F001F98FD /* CategoryRepoRequest.swift in Sources */,
+				714C2F1B221FC7D2001F98FD /* CategoryRepoRepository.swift in Sources */,
+				714C2F08221F96F1001F98FD /* CustomRequestAdapter.swift in Sources */,
+>>>>>>> Initial API and get Category Data
 				714C2F2E221FD77D001F98FD /* RepoDetailNavigator.swift in Sources */,
 				714C2EE3221F86C1001F98FD /* AppNavigator.swift in Sources */,
 				714C2EE5221F86D0001F98FD /* AppUseCase.swift in Sources */,
@@ -466,8 +565,13 @@
 				714C2F25221FCD5D001F98FD /* ViewController+Rx.swift in Sources */,
 				714C2EF4221F8ED6001F98FD /* MainViewModel.swift in Sources */,
 				714C2ECD221F83AC001F98FD /* AppDelegate.swift in Sources */,
+<<<<<<< HEAD
 				714C2F21221FCAC6001F98FD /* GithubRepoCell.swift in Sources */,
 				714C2F13221F988A001F98FD /* GithubRepoResponse.swift in Sources */,
+=======
+				714C2F21221FCAC6001F98FD /* CategoryRepoCell.swift in Sources */,
+				714C2F13221F988A001F98FD /* CategoryRepoResponse.swift in Sources */,
+>>>>>>> Initial API and get Category Data
 				714C2F17221F9999001F98FD /* ErrorResponse.swift in Sources */,
 				714C2F02221F9461001F98FD /* APIService.swift in Sources */,
 				714C2EF0221F8EC1001F98FD /* MainNavigator.swift in Sources */,
@@ -489,6 +593,17 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+=======
+		714C2ED5221F83AE001F98FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				714C2ED6221F83AE001F98FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+>>>>>>> Initial API and get Category Data
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -549,7 +664,10 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+<<<<<<< HEAD
 				SWIFT_OBJC_BRIDGING_HEADER = "IOSCookBook/IOSCookBook-Bridging-Header.h";
+=======
+>>>>>>> Initial API and get Category Data
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -603,7 +721,10 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+<<<<<<< HEAD
 				SWIFT_OBJC_BRIDGING_HEADER = "IOSCookBook/IOSCookBook-Bridging-Header.h";
+=======
+>>>>>>> Initial API and get Category Data
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
