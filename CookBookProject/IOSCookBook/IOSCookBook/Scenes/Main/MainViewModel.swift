@@ -16,7 +16,7 @@ extension MainViewModel: ViewModelType {
     }
     
     struct Output {
-        let repos: Driver<[CategoryRepo]>
+        let categories: Driver<[Category]>
         let selected: Driver<Void>
         let error: Driver<Error>
         let indicator: Driver<Bool>
@@ -26,25 +26,25 @@ extension MainViewModel: ViewModelType {
         let indicator = ActivityIndicator()
         let error = ErrorTracker()
         
-        let repos = input.loadTrigger
+        let categories = input.loadTrigger
             .flatMapLatest { _ in
-                return self.useCase.getRepos()
+                return self.useCase.getCategories()
                     .trackActivity(indicator)
                     .trackError(error)
                     .asDriverOnErrorJustComplete()
             }
         
-        let selected = input.selectTrigger?
-            .withLatestFrom(repos) { indexPath, repos in
-                return repos[indexPath.row]
+        let selected = input.selectTrigger
+            .withLatestFrom(categories) { indexPath, categories in
+                return categories[indexPath.row]
             }
-            .do(onNext: { repo in
-                self.navigator.toRepoDetail(categoryRepo: repo)
+            .do(onNext: { category in
+                self.navigator.toCategoryDetail(category: category)
             })
             .mapToVoid()
         
         return Output(
-            repos: repos,
+            categories: categories,
             selected: selected,
             error: error.asDriver(),
             indicator: indicator.asDriver()

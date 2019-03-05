@@ -1,16 +1,16 @@
 //
-//  CategoryRepoResponse.swift
+//  CategoryResponse.swift
 
 import Foundation
 
-final class CategoryRepoResponse : Mappable {
-    var categoryRepos = [CategoryRepo]()
+final class CategoryResponse: Mappable {
+    var categories = [Category]()
     
     required init(map: Map) {
         mapping(map: map)
     }
     
     func mapping(map: Map) {
-        categoryRepos <- map["categories"]
+        categories <- map["categories"]
     }
 }

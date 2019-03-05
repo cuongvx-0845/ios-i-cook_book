@@ -2,17 +2,16 @@
 //  MainUseCase.swift
 
 import Foundation
-import MGArchitecture
 
 protocol MainUseCaseType {
-    func getRepos() -> Observable<[CategoryRepo]>
+    func getCategories() -> Observable<[Category]>
 }
 
 struct MainUseCase: MainUseCaseType {
     
-    func getRepos() -> Observable<[CategoryRepo]> {
-        let request = CategoryRepoRequest(page: 1)
-        let repository = CategoryRepoRepository()
-        return repository.getCategoryRepos(input: request)
+    func getCategories() -> Observable<[Category]> {
+        let request = CategoryRequest()
+        let repository = CategoryRepository()
+        return repository.getCategories(input: request)
     }
 }

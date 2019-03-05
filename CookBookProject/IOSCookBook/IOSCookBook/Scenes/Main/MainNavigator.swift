@@ -5,19 +5,19 @@ import Foundation
 import UIKit
 
 protocol MainNavigatorType {
-    func toRepoDetail(categoryRepo: CategoryRepo)
+    func toCategoryDetail(category: Category)
 }
 
 struct MainNavigator: MainNavigatorType {
     unowned let navigationController: UINavigationController
     
-    func toRepoDetail(categoryRepo: CategoryRepo) {
-        let viewController = RepoDetailViewController.instantiate()
-        let useCase = RepoDetailUseCase()
-        let navigator = RepoDetailNavigator(navigationController: navigationController)
-        let viewModel = RepoDetailViewModel(navigator: navigator,
-                                            useCase: useCase,
-                                            repo: CategoryRepo)
+    func toCategoryDetail(category: Category) {
+        let viewController = CategoryDetailViewController.instantiate()
+        let useCase = CategoryDetailUseCase()
+        let navigator = CategoryDetailNavigator(navigationController: navigationController)
+        let viewModel = CategoryDetailViewModel(navigator: navigator,
+                                                useCase: useCase,
+                                                category: category)
         viewController.bindViewModel(to: viewModel)
         navigationController.pushViewController(viewController, animated: true)
     }

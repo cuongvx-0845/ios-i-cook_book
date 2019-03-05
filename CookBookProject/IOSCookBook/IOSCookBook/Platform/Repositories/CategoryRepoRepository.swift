@@ -1,19 +1,19 @@
 //
-//  CategoryRepoRepository.swift
+//  CategoryRepository.swift
 
 import Foundation
 
-protocol CategoryRepoRepositoryType {
-    func getCategoryRepos(input: CategoryRepoRequest) -> Observable<[CategoryRepo]>
+protocol CategoryRepositoryType {
+    func getCategories(input: CategoryRequest) -> Observable<[Category]>
 }
 
-final class CategoryRepoRepository: CategoryRepoRepositoryType {
+final class CategoryRepository: CategoryRepositoryType {
     private let api: APIService = APIService.share
     
-    func getCategoryRepos(input: CategoryRepoRequest) -> Observable<[CategoryRepo]> {
+    func getCategories(input: CategoryRequest) -> Observable<[Category]> {
         return api.request(input: input)
-            .map { (response: CategoryRepoResponse) -> [CategoryRepo] in
-                return response.categoryRepos
+            .map { (response: CategoryResponse) -> [Category] in
+                return response.categories
             }
     }
 }

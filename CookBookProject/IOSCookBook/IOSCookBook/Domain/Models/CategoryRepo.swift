@@ -1,32 +1,32 @@
 //
-//  CategoryRepo
+//  Category.swift
 
 import Foundation
 
-struct CategoryRepo {
-    var categoryName: String
+struct Category {
+    var name: String
     var avatarURLString: String
-    var categoryDescription: String
+    var description: String
 }
 
-extension CategoryRepo {
+extension Category {
     init() {
         self.init(
-            categoryName: "",
+            name: "",
             avatarURLString: "",
-            categoryDescription: ""
+            description: ""
         )
     }
 }
 
-extension CategoryRepo: BaseModel {
+extension Category: BaseModel {
     init?(map: Map) {
         self.init()
     }
     
     mutating func mapping(map: Map) {
-        categoryName <- map["strCategory"]
+        name <- map["strCategory"]
         avatarURLString <- map["strCategoryThumb"]
-        categoryDescription <- map["strCategoryDescription"]
+        description <- map["strCategoryDescription"]
     }
 }

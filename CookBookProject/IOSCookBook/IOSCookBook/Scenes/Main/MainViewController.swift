@@ -5,7 +5,7 @@ import UIKit
 import Foundation
 import MGArchitecture
 
-class MainViewController: UIViewController, BindableType {
+final class MainViewController: UIViewController, BindableType {
     @IBOutlet private weak var tableView: UITableView!
     
     var viewModel: MainViewModel!
@@ -21,7 +21,7 @@ class MainViewController: UIViewController, BindableType {
         )
         let output = viewModel.transform(input)
         
-        output.repos.asObservable()
+        output.repos
             .drive()
             .disposed(by: rx.disposeBag)
     }

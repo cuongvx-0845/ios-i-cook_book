@@ -1,16 +1,11 @@
 //
-//  CategoryRepoRequest
+//  CategoryRequest
 
 import Foundation
 
-final class CategoryRepoRequest: BaseRequest {
+final class CategoryRequest: BaseRequest {
     
-    required init(page: Int, perPage: Int = 10) {
-        let body: [String: Any]  = [
-            "q": "language:Rxswift",
-            "per_page": perPage,
-            "page": page
-        ]
-        super.init(url: URLs.categoryRepo, requestType: .get, body: body)
+    required init() {
+        super.init(url: URLs.category, requestType: .get, body: nil)
     }
 }
