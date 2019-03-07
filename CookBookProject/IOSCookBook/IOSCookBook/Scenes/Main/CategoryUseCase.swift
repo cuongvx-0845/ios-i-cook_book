@@ -1,5 +1,5 @@
 //
-//  MainUseCase.swift
+//  CategoryUseCase.swift
 
 import Foundation
 
@@ -7,7 +7,7 @@ protocol MainUseCaseType {
     func getCategories() -> Observable<[Category]>
 }
 
-struct MainUseCase: MainUseCaseType {
+struct CategoryUseCase: MainUseCaseType {
     
     func getCategories() -> Observable<[Category]> {
         let request = CategoryRequest()

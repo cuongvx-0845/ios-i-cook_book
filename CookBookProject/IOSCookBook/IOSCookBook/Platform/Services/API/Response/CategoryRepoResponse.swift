@@ -2,6 +2,7 @@
 //  CategoryResponse.swift
 
 import Foundation
+import ObjectMapper
 
 final class CategoryResponse: Mappable {
     var categories = [Category]()
