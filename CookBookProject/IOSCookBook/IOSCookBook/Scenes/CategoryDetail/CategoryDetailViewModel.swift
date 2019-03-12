@@ -28,12 +28,12 @@ extension CategoryDetailViewModel: ViewModelType {
         let categoryName = input.loadTrigger
             .map { _ in
                 return self.category.name
-        }
+            }
         
         let categoryImageUrl = input.loadTrigger
             .map { _ in
                 return self.category.avatarURLString
-        }
+            }
         
         return Output(
             categoryName: categoryName,

@@ -1,11 +1,11 @@
 //
-//  MainViewModel.swift
+//  CategoryViewModel.swift
 
 import Foundation
 
 struct CategoryViewModel {
-    let navigator: MainNavigatorType
-    let useCase: MainUseCaseType
+    let navigator: CategoryNavigatorType
+    let useCase: CategoryUseCaseType
 }
 
 extension CategoryViewModel: ViewModelType {

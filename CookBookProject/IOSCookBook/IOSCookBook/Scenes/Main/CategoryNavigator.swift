@@ -1,14 +1,14 @@
 //
-//  MainNavigator.swift
+//  CategoryNavigator.swift
 
 import Foundation
 import UIKit
 
-protocol MainNavigatorType {
+protocol CategoryNavigatorType {
     func toCategoryDetail(category: Category)
 }
 
-struct MainNavigator: MainNavigatorType {
+struct CategoryNavigator: CategoryNavigatorType {
     unowned let navigationController: UINavigationController
     
     func toCategoryDetail(category: Category) {
@@ -18,6 +18,7 @@ struct MainNavigator: MainNavigatorType {
         let viewModel = CategoryDetailViewModel(navigator: navigator,
                                                 useCase: useCase,
                                                 category: category)
+        
         viewController.bindViewModel(to: viewModel)
         navigationController.pushViewController(viewController, animated: true)
     }

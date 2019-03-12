@@ -1,12 +1,12 @@
-//
+
 //  CategoryDetailViewController.swift
 
 import UIKit
 import Foundation
 
-class CategoryDetailViewController: UIViewController, BindableType {
-    @IBOutlet weak var avatarImageView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
+final class CategoryDetailViewController: UIViewController, BindableType {
+    @IBOutlet private weak var avatarImageView: UIImageView!
+    @IBOutlet private weak var nameLabel: UILabel!
     
     var viewModel: CategoryDetailViewModel!
     
@@ -24,9 +24,9 @@ class CategoryDetailViewController: UIViewController, BindableType {
             loadTrigger: Driver.just(())
         )
         let output = viewModel.transform(input)
-        
+
         output.categoryImage
-            .drive(avatarBinding)
+            .drive(avatarImageView.rx.avatarBinding)
             .disposed(by: rx.disposeBag)
         
         output.categoryName
@@ -40,16 +40,6 @@ class CategoryDetailViewController: UIViewController, BindableType {
         output.error
             .drive(rx.error)
             .disposed(by: rx.disposeBag)
-    }
-}
-
-extension CategoryDetailViewController {
-    
-    var avatarBinding: Binder<String> {
-        return Binder(self) { viewController, imageUrl in
-            let url = URL(string: imageUrl)
-            viewController.avatarImageView.sd_setImage(with: url, completed: nil)
-        }
     }
 }
 

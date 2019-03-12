@@ -4,8 +4,14 @@
 import UIKit
 import Foundation
 
-class CategoryViewController: UIViewController, BindableType {
-    @IBOutlet weak var tableView: UITableView!
+final class CategoryViewController: UIViewController, BindableType {
+    
+    private struct Constant {
+        static let rowHeight: CGFloat = 56
+        static let title = "Category"
+    }
+    
+    @IBOutlet private weak var tableView: UITableView!
     
     var viewModel: CategoryViewModel!
     
@@ -49,11 +55,6 @@ class CategoryViewController: UIViewController, BindableType {
         output.error
             .drive(rx.error)
             .disposed(by: rx.disposeBag)
-    }
-    
-    private struct Constant {
-        static let rowHeight: CGFloat = 56
-        static let title = "Category"
     }
 }
 

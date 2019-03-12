@@ -13,7 +13,7 @@ struct AppNavigator: AppNavigatorType {
     func toMain() {
         let viewController = CategoryViewController.instantiate()
         let navigationController = UINavigationController(rootViewController: viewController)
-        let navigator = MainNavigator(navigationController: navigationController)
+        let navigator = CategoryNavigator(navigationController: navigationController)
         let useCase = CategoryUseCase()
         let viewModel = CategoryViewModel(navigator: navigator, useCase: useCase)
 
