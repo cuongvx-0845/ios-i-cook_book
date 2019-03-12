@@ -2,6 +2,7 @@
 //  Category.swift
 
 import Foundation
+import ObjectMapper
 
 struct Category {
     var name: String

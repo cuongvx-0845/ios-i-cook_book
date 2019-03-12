@@ -7,123 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040DFFE12231168D001B5503 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040DFFDE2231168D001B5503 /* CategoryCell.swift */; };
+		040DFFE32231168D001B5503 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040DFFE02231168D001B5503 /* CategoryCell.xib */; };
+		040DFFE622311783001B5503 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040DFFE422311783001B5503 /* Category.swift */; };
+		040DFFE722311783001B5503 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040DFFE522311783001B5503 /* BaseModel.swift */; };
+		040DFFE922311908001B5503 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040DFFE822311908001B5503 /* URLs.swift */; };
+		040DFFEC22311917001B5503 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040DFFEA22311917001B5503 /* BaseRequest.swift */; };
+		040DFFED22311917001B5503 /* CategoryRepoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040DFFEB22311917001B5503 /* CategoryRepoRequest.swift */; };
+		040DFFEF2231191E001B5503 /* CategoryRepoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040DFFEE2231191E001B5503 /* CategoryRepoResponse.swift */; };
+		040DFFF322311925001B5503 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040DFFF022311925001B5503 /* ErrorResponse.swift */; };
+		040DFFF422311925001B5503 /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040DFFF122311925001B5503 /* BaseError.swift */; };
+		040DFFF522311925001B5503 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040DFFF222311925001B5503 /* HTTPStatusCode.swift */; };
+		040DFFF72231192C001B5503 /* CategoryRepoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040DFFF62231192C001B5503 /* CategoryRepoRepository.swift */; };
+		040DFFF922311995001B5503 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040DFFF822311995001B5503 /* APIService.swift */; };
+		041048A12237AB6500C947A3 /* UIImageView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041048A02237AB6500C947A3 /* UIImageView+Rx.swift */; };
 		714C2ECD221F83AC001F98FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2ECC221F83AC001F98FD /* AppDelegate.swift */; };
 		714C2ED2221F83AC001F98FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714C2ED0221F83AC001F98FD /* Main.storyboard */; };
 		714C2ED4221F83AE001F98FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714C2ED3221F83AE001F98FD /* Assets.xcassets */; };
-<<<<<<< HEAD
-=======
-		714C2ED7221F83AE001F98FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714C2ED5221F83AE001F98FD /* LaunchScreen.storyboard */; };
->>>>>>> Initial API and get Category Data
 		714C2EE1221F86B6001F98FD /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EE0221F86B6001F98FD /* AppViewModel.swift */; };
 		714C2EE3221F86C1001F98FD /* AppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EE2221F86C1001F98FD /* AppNavigator.swift */; };
 		714C2EE5221F86D0001F98FD /* AppUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EE4221F86D0001F98FD /* AppUseCase.swift */; };
 		714C2EE8221F8951001F98FD /* StoryBoards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EE7221F8951001F98FD /* StoryBoards.swift */; };
-		714C2EEE221F89C7001F98FD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EED221F89C7001F98FD /* MainViewController.swift */; };
-		714C2EF0221F8EC1001F98FD /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EEF221F8EC1001F98FD /* MainNavigator.swift */; };
-		714C2EF2221F8ECA001F98FD /* MainUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EF1221F8ECA001F98FD /* MainUseCase.swift */; };
-		714C2EF4221F8ED6001F98FD /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EF3221F8ED6001F98FD /* MainViewModel.swift */; };
-<<<<<<< HEAD
-		714C2EF9221F9238001F98FD /* GithubRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EF8221F9238001F98FD /* GithubRepo.swift */; };
-		714C2F02221F9461001F98FD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F01221F9461001F98FD /* APIService.swift */; };
-		714C2F0D221F97AA001F98FD /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F0C221F97AA001F98FD /* BaseRequest.swift */; };
-		714C2F0F221F97F8001F98FD /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F0E221F97F8001F98FD /* URLs.swift */; };
-		714C2F11221F983F001F98FD /* GithubRepoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F10221F983F001F98FD /* GithubRepoRequest.swift */; };
-		714C2F13221F988A001F98FD /* GithubRepoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F12221F988A001F98FD /* GithubRepoResponse.swift */; };
-		714C2F15221F9979001F98FD /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F14221F9979001F98FD /* BaseError.swift */; };
-		714C2F17221F9999001F98FD /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F16221F9999001F98FD /* ErrorResponse.swift */; };
-		714C2F19221FB323001F98FD /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F18221FB323001F98FD /* HTTPStatusCode.swift */; };
-		714C2F1B221FC7D2001F98FD /* GithubRepoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F1A221FC7D2001F98FD /* GithubRepoRepository.swift */; };
-		714C2F1D221FC8E4001F98FD /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F1C221FC8E4001F98FD /* BaseModel.swift */; };
-		714C2F21221FCAC6001F98FD /* GithubRepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F1F221FCAC6001F98FD /* GithubRepoCell.swift */; };
-		714C2F22221FCAC6001F98FD /* GithubRepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 714C2F20221FCAC6001F98FD /* GithubRepoCell.xib */; };
-=======
-		714C2EF9221F9238001F98FD /* CategoryRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EF8221F9238001F98FD /* CategoryRepo.swift */; };
-		714C2F02221F9461001F98FD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F01221F9461001F98FD /* APIService.swift */; };
-		714C2F08221F96F1001F98FD /* CustomRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F07221F96F1001F98FD /* CustomRequestAdapter.swift */; };
-		714C2F0B221F9744001F98FD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F0A221F9744001F98FD /* Constants.swift */; };
-		714C2F0D221F97AA001F98FD /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F0C221F97AA001F98FD /* BaseRequest.swift */; };
-		714C2F0F221F97F8001F98FD /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F0E221F97F8001F98FD /* URLs.swift */; };
-		714C2F11221F983F001F98FD /* CategoryRepoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F10221F983F001F98FD /* CategoryRepoRequest.swift */; };
-		714C2F13221F988A001F98FD /* CategoryRepoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F12221F988A001F98FD /* CategoryRepoResponse.swift */; };
-		714C2F15221F9979001F98FD /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F14221F9979001F98FD /* BaseError.swift */; };
-		714C2F17221F9999001F98FD /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F16221F9999001F98FD /* ErrorResponse.swift */; };
-		714C2F19221FB323001F98FD /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F18221FB323001F98FD /* HTTPStatusCode.swift */; };
-		714C2F1B221FC7D2001F98FD /* CategoryRepoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F1A221FC7D2001F98FD /* CategoryRepoRepository.swift */; };
-		714C2F1D221FC8E4001F98FD /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F1C221FC8E4001F98FD /* BaseModel.swift */; };
-		714C2F21221FCAC6001F98FD /* CategoryRepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F1F221FCAC6001F98FD /* CategoryRepoCell.swift */; };
-		714C2F22221FCAC6001F98FD /* CategoryRepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 714C2F20221FCAC6001F98FD /* CategoryRepoCell.xib */; };
->>>>>>> Initial API and get Category Data
+		714C2EEE221F89C7001F98FD /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EED221F89C7001F98FD /* CategoryViewController.swift */; };
+		714C2EF0221F8EC1001F98FD /* CategoryNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EEF221F8EC1001F98FD /* CategoryNavigator.swift */; };
+		714C2EF2221F8ECA001F98FD /* CategoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EF1221F8ECA001F98FD /* CategoryUseCase.swift */; };
+		714C2EF4221F8ED6001F98FD /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2EF3221F8ED6001F98FD /* CategoryViewModel.swift */; };
 		714C2F25221FCD5D001F98FD /* ViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F24221FCD5D001F98FD /* ViewController+Rx.swift */; };
 		714C2F27221FCDE2001F98FD /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F26221FCDE2001F98FD /* UIViewController+.swift */; };
-		714C2F2A221FD75F001F98FD /* RepoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F29221FD75F001F98FD /* RepoDetailViewModel.swift */; };
-		714C2F2C221FD76E001F98FD /* RepoDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F2B221FD76E001F98FD /* RepoDetailUseCase.swift */; };
-		714C2F2E221FD77D001F98FD /* RepoDetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F2D221FD77D001F98FD /* RepoDetailNavigator.swift */; };
-		714C2F30221FD791001F98FD /* RepoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F2F221FD791001F98FD /* RepoDetailViewController.swift */; };
-		AC288A3A913FC0EA073E7B7D /* Pods_SimpleDemoCleanArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A01E9CB332F807E2695B53 /* Pods_SimpleDemoCleanArchitecture.framework */; };
+		714C2F2A221FD75F001F98FD /* CategoryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F29221FD75F001F98FD /* CategoryDetailViewModel.swift */; };
+		714C2F2C221FD76E001F98FD /* CategoryDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F2B221FD76E001F98FD /* CategoryDetailUseCase.swift */; };
+		714C2F2E221FD77D001F98FD /* CategoryDetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F2D221FD77D001F98FD /* CategoryDetailNavigator.swift */; };
+		714C2F30221FD791001F98FD /* CategoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C2F2F221FD791001F98FD /* CategoryDetailViewController.swift */; };
+		838B3F5930784016B49A5B26 /* Pods_IOSCookBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7184231B359279C1BDFFF062 /* Pods_IOSCookBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-<<<<<<< HEAD
-		0434A1222229225800DE299B /* IOSCookBook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IOSCookBook-Bridging-Header.h"; sourceTree = "<group>"; };
-=======
->>>>>>> Initial API and get Category Data
+		040DFFDD2231162F001B5503 /* IOSCookBook-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IOSCookBook-Bridging-Header.h"; sourceTree = "<group>"; };
+		040DFFDE2231168D001B5503 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		040DFFE02231168D001B5503 /* CategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		040DFFE422311783001B5503 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		040DFFE522311783001B5503 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		040DFFE822311908001B5503 /* URLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		040DFFEA22311917001B5503 /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "\U0010BaseRequest.swift"; sourceTree = "<group>"; };
+		040DFFEB22311917001B5503 /* CategoryRepoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryRepoRequest.swift; sourceTree = "<group>"; };
+		040DFFEE2231191E001B5503 /* CategoryRepoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryRepoResponse.swift; sourceTree = "<group>"; };
+		040DFFF022311925001B5503 /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		040DFFF122311925001B5503 /* BaseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
+		040DFFF222311925001B5503 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		040DFFF62231192C001B5503 /* CategoryRepoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryRepoRepository.swift; sourceTree = "<group>"; };
+		040DFFF822311995001B5503 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		041048A02237AB6500C947A3 /* UIImageView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Rx.swift"; sourceTree = "<group>"; };
 		37869304476713634AA3A366 /* Pods-SimpleDemoCleanArchitecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleDemoCleanArchitecture.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleDemoCleanArchitecture/Pods-SimpleDemoCleanArchitecture.release.xcconfig"; sourceTree = "<group>"; };
+		418A44B110492466CF3F76DE /* Pods-IOSCookBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSCookBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSCookBook/Pods-IOSCookBook.debug.xcconfig"; sourceTree = "<group>"; };
 		5BD36DC1B11198D43E3DE2E5 /* Pods-SimpleDemoCleanArchitecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleDemoCleanArchitecture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleDemoCleanArchitecture/Pods-SimpleDemoCleanArchitecture.debug.xcconfig"; sourceTree = "<group>"; };
+		699372774AA708F0508A9C57 /* Pods-IOSCookBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSCookBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSCookBook/Pods-IOSCookBook.release.xcconfig"; sourceTree = "<group>"; };
 		714C2EC9221F83AC001F98FD /* IOSCookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSCookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		714C2ECC221F83AC001F98FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		714C2ED1221F83AC001F98FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		714C2ED3221F83AE001F98FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-<<<<<<< HEAD
-=======
-		714C2ED6221F83AE001F98FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
->>>>>>> Initial API and get Category Data
 		714C2ED8221F83AE001F98FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		714C2EE0221F86B6001F98FD /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		714C2EE2221F86C1001F98FD /* AppNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigator.swift; sourceTree = "<group>"; };
 		714C2EE4221F86D0001F98FD /* AppUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUseCase.swift; sourceTree = "<group>"; };
 		714C2EE7221F8951001F98FD /* StoryBoards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoards.swift; sourceTree = "<group>"; };
-		714C2EED221F89C7001F98FD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		714C2EEF221F8EC1001F98FD /* MainNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
-		714C2EF1221F8ECA001F98FD /* MainUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUseCase.swift; sourceTree = "<group>"; };
-		714C2EF3221F8ED6001F98FD /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		714C2EF8221F9238001F98FD /* GithubRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepo.swift; sourceTree = "<group>"; };
-		714C2F01221F9461001F98FD /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		714C2F0C221F97AA001F98FD /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\U0010BaseRequest.swift"; sourceTree = "<group>"; };
-		714C2F0E221F97F8001F98FD /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
-		714C2F10221F983F001F98FD /* GithubRepoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepoRequest.swift; sourceTree = "<group>"; };
-		714C2F12221F988A001F98FD /* GithubRepoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepoResponse.swift; sourceTree = "<group>"; };
-		714C2F14221F9979001F98FD /* BaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
-		714C2F16221F9999001F98FD /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
-		714C2F18221FB323001F98FD /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
-		714C2F1A221FC7D2001F98FD /* GithubRepoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepoRepository.swift; sourceTree = "<group>"; };
-		714C2F1C221FC8E4001F98FD /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
-		714C2F1F221FCAC6001F98FD /* GithubRepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepoCell.swift; sourceTree = "<group>"; };
-		714C2F20221FCAC6001F98FD /* GithubRepoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GithubRepoCell.xib; sourceTree = "<group>"; };
-=======
-		714C2EF8221F9238001F98FD /* CategoryRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepo.swift; sourceTree = "<group>"; };
-		714C2F01221F9461001F98FD /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		714C2F07221F96F1001F98FD /* CustomRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRequestAdapter.swift; sourceTree = "<group>"; };
-		714C2F0A221F9744001F98FD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		714C2F0C221F97AA001F98FD /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\U0010BaseRequest.swift"; sourceTree = "<group>"; };
-		714C2F0E221F97F8001F98FD /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
-		714C2F10221F983F001F98FD /* CategoryRepoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepoRequest.swift; sourceTree = "<group>"; };
-		714C2F12221F988A001F98FD /* CategoryRepoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepoResponse.swift; sourceTree = "<group>"; };
-		714C2F14221F9979001F98FD /* BaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
-		714C2F16221F9999001F98FD /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
-		714C2F18221FB323001F98FD /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
-		714C2F1A221FC7D2001F98FD /* CategoryRepoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepoRepository.swift; sourceTree = "<group>"; };
-		714C2F1C221FC8E4001F98FD /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
-		714C2F1F221FCAC6001F98FD /* CategoryRepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepoCell.swift; sourceTree = "<group>"; };
-		714C2F20221FCAC6001F98FD /* CategoryRepoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryRepoCell.xib; sourceTree = "<group>"; };
->>>>>>> Initial API and get Category Data
+		714C2EED221F89C7001F98FD /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		714C2EEF221F8EC1001F98FD /* CategoryNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryNavigator.swift; sourceTree = "<group>"; };
+		714C2EF1221F8ECA001F98FD /* CategoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryUseCase.swift; sourceTree = "<group>"; };
+		714C2EF3221F8ED6001F98FD /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		714C2F24221FCD5D001F98FD /* ViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Rx.swift"; sourceTree = "<group>"; };
 		714C2F26221FCDE2001F98FD /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
-		714C2F29221FD75F001F98FD /* RepoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailViewModel.swift; sourceTree = "<group>"; };
-		714C2F2B221FD76E001F98FD /* RepoDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailUseCase.swift; sourceTree = "<group>"; };
-		714C2F2D221FD77D001F98FD /* RepoDetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailNavigator.swift; sourceTree = "<group>"; };
-		714C2F2F221FD791001F98FD /* RepoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailViewController.swift; sourceTree = "<group>"; };
-		A3A01E9CB332F807E2695B53 /* Pods_SimpleDemoCleanArchitecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleDemoCleanArchitecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		714C2F29221FD75F001F98FD /* CategoryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailViewModel.swift; sourceTree = "<group>"; };
+		714C2F2B221FD76E001F98FD /* CategoryDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailUseCase.swift; sourceTree = "<group>"; };
+		714C2F2D221FD77D001F98FD /* CategoryDetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailNavigator.swift; sourceTree = "<group>"; };
+		714C2F2F221FD791001F98FD /* CategoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailViewController.swift; sourceTree = "<group>"; };
+		7184231B359279C1BDFFF062 /* Pods_IOSCookBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSCookBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC288A3A913FC0EA073E7B7D /* Pods_SimpleDemoCleanArchitecture.framework in Frameworks */,
+				838B3F5930784016B49A5B26 /* Pods_IOSCookBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,19 +116,14 @@
 		714C2ECB221F83AC001F98FD /* IOSCookBook */ = {
 			isa = PBXGroup;
 			children = (
+				040DFFDD2231162F001B5503 /* IOSCookBook-Bridging-Header.h */,
 				714C2F09221F971E001F98FD /* Utils */,
 				714C2F23221FCD51001F98FD /* Extensions */,
 				714C2EF5221F91A9001F98FD /* Domain */,
 				714C2EF6221F91AE001F98FD /* Platform */,
 				714C2EDE221F868C001F98FD /* Scenes */,
 				714C2ECC221F83AC001F98FD /* AppDelegate.swift */,
-<<<<<<< HEAD
-				0434A1222229225800DE299B /* IOSCookBook-Bridging-Header.h */,
 				714C2ED3221F83AE001F98FD /* Assets.xcassets */,
-=======
-				714C2ED3221F83AE001F98FD /* Assets.xcassets */,
-				714C2ED5221F83AE001F98FD /* LaunchScreen.storyboard */,
->>>>>>> Initial API and get Category Data
 				714C2ED8221F83AE001F98FD /* Info.plist */,
 			);
 			path = IOSCookBook;
@@ -180,7 +132,7 @@
 		714C2EDE221F868C001F98FD /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				714C2F28221FD739001F98FD /* RepoDetail */,
+				714C2F28221FD739001F98FD /* CategoryDetail */,
 				714C2EE9221F8999001F98FD /* Main */,
 				714C2EDF221F86A2001F98FD /* App */,
 				714C2EE6221F893C001F98FD /* StoryBoards */,
@@ -192,13 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				714C2EE0221F86B6001F98FD /* AppViewModel.swift */,
-<<<<<<< HEAD
-				714C2EE2221F86C1001F98FD /* AppNavigator.swift */,
-				714C2EE4221F86D0001F98FD /* AppUseCase.swift */,
-=======
 				714C2EE4221F86D0001F98FD /* AppUseCase.swift */,
 				714C2EE2221F86C1001F98FD /* AppNavigator.swift */,
->>>>>>> Initial API and get Category Data
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -216,10 +163,10 @@
 			isa = PBXGroup;
 			children = (
 				714C2F1E221FCA9E001F98FD /* Cell */,
-				714C2EED221F89C7001F98FD /* MainViewController.swift */,
-				714C2EF3221F8ED6001F98FD /* MainViewModel.swift */,
-				714C2EEF221F8EC1001F98FD /* MainNavigator.swift */,
-				714C2EF1221F8ECA001F98FD /* MainUseCase.swift */,
+				714C2EED221F89C7001F98FD /* CategoryViewController.swift */,
+				714C2EF3221F8ED6001F98FD /* CategoryViewModel.swift */,
+				714C2EEF221F8EC1001F98FD /* CategoryNavigator.swift */,
+				714C2EF1221F8ECA001F98FD /* CategoryUseCase.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -244,12 +191,8 @@
 		714C2EF7221F922A001F98FD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				714C2F1C221FC8E4001F98FD /* BaseModel.swift */,
-<<<<<<< HEAD
-				714C2EF8221F9238001F98FD /* GithubRepo.swift */,
-=======
-				714C2EF8221F9238001F98FD /* CategoryRepo.swift */,
->>>>>>> Initial API and get Category Data
+				040DFFE522311783001B5503 /* BaseModel.swift */,
+				040DFFE422311783001B5503 /* Category.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -257,11 +200,7 @@
 		714C2EFA221F92C3001F98FD /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				714C2F1A221FC7D2001F98FD /* GithubRepoRepository.swift */,
-=======
-				714C2F1A221FC7D2001F98FD /* CategoryRepoRepository.swift */,
->>>>>>> Initial API and get Category Data
+				040DFFF62231192C001B5503 /* CategoryRepoRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -269,7 +208,7 @@
 		714C2EFB221F92D9001F98FD /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				714C2F01221F9461001F98FD /* APIService.swift */,
+				040DFFF822311995001B5503 /* APIService.swift */,
 				714C2F03221F94E0001F98FD /* API */,
 			);
 			path = Services;
@@ -288,14 +227,8 @@
 		714C2F04221F96CA001F98FD /* Request */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				714C2F0C221F97AA001F98FD /* BaseRequest.swift */,
-				714C2F10221F983F001F98FD /* GithubRepoRequest.swift */,
-=======
-				714C2F07221F96F1001F98FD /* CustomRequestAdapter.swift */,
-				714C2F0C221F97AA001F98FD /* BaseRequest.swift */,
-				714C2F10221F983F001F98FD /* CategoryRepoRequest.swift */,
->>>>>>> Initial API and get Category Data
+				040DFFEA22311917001B5503 /* BaseRequest.swift */,
+				040DFFEB22311917001B5503 /* CategoryRepoRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -303,11 +236,7 @@
 		714C2F05221F96D5001F98FD /* Response */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				714C2F12221F988A001F98FD /* GithubRepoResponse.swift */,
-=======
-				714C2F12221F988A001F98FD /* CategoryRepoResponse.swift */,
->>>>>>> Initial API and get Category Data
+				040DFFEE2231191E001B5503 /* CategoryRepoResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -315,9 +244,9 @@
 		714C2F06221F96DE001F98FD /* Error */ = {
 			isa = PBXGroup;
 			children = (
-				714C2F18221FB323001F98FD /* HTTPStatusCode.swift */,
-				714C2F14221F9979001F98FD /* BaseError.swift */,
-				714C2F16221F9999001F98FD /* ErrorResponse.swift */,
+				040DFFF122311925001B5503 /* BaseError.swift */,
+				040DFFF022311925001B5503 /* ErrorResponse.swift */,
+				040DFFF222311925001B5503 /* HTTPStatusCode.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -325,11 +254,7 @@
 		714C2F09221F971E001F98FD /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-=======
-				714C2F0A221F9744001F98FD /* Constants.swift */,
->>>>>>> Initial API and get Category Data
-				714C2F0E221F97F8001F98FD /* URLs.swift */,
+				040DFFE822311908001B5503 /* URLs.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -337,13 +262,8 @@
 		714C2F1E221FCA9E001F98FD /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				714C2F1F221FCAC6001F98FD /* GithubRepoCell.swift */,
-				714C2F20221FCAC6001F98FD /* GithubRepoCell.xib */,
-=======
-				714C2F1F221FCAC6001F98FD /* CategoryRepoCell.swift */,
-				714C2F20221FCAC6001F98FD /* CategoryRepoCell.xib */,
->>>>>>> Initial API and get Category Data
+				040DFFDE2231168D001B5503 /* CategoryCell.swift */,
+				040DFFE02231168D001B5503 /* CategoryCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -353,25 +273,26 @@
 			children = (
 				714C2F24221FCD5D001F98FD /* ViewController+Rx.swift */,
 				714C2F26221FCDE2001F98FD /* UIViewController+.swift */,
+				041048A02237AB6500C947A3 /* UIImageView+Rx.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		714C2F28221FD739001F98FD /* RepoDetail */ = {
+		714C2F28221FD739001F98FD /* CategoryDetail */ = {
 			isa = PBXGroup;
 			children = (
-				714C2F2F221FD791001F98FD /* RepoDetailViewController.swift */,
-				714C2F29221FD75F001F98FD /* RepoDetailViewModel.swift */,
-				714C2F2D221FD77D001F98FD /* RepoDetailNavigator.swift */,
-				714C2F2B221FD76E001F98FD /* RepoDetailUseCase.swift */,
+				714C2F2F221FD791001F98FD /* CategoryDetailViewController.swift */,
+				714C2F29221FD75F001F98FD /* CategoryDetailViewModel.swift */,
+				714C2F2D221FD77D001F98FD /* CategoryDetailNavigator.swift */,
+				714C2F2B221FD76E001F98FD /* CategoryDetailUseCase.swift */,
 			);
-			path = RepoDetail;
+			path = CategoryDetail;
 			sourceTree = "<group>";
 		};
 		B2EC6C500E801CBB1BBAB9E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A3A01E9CB332F807E2695B53 /* Pods_SimpleDemoCleanArchitecture.framework */,
+				7184231B359279C1BDFFF062 /* Pods_IOSCookBook.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -381,6 +302,8 @@
 			children = (
 				5BD36DC1B11198D43E3DE2E5 /* Pods-SimpleDemoCleanArchitecture.debug.xcconfig */,
 				37869304476713634AA3A366 /* Pods-SimpleDemoCleanArchitecture.release.xcconfig */,
+				418A44B110492466CF3F76DE /* Pods-IOSCookBook.debug.xcconfig */,
+				699372774AA708F0508A9C57 /* Pods-IOSCookBook.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -446,14 +369,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
-				714C2F22221FCAC6001F98FD /* GithubRepoCell.xib in Resources */,
-=======
-				714C2F22221FCAC6001F98FD /* CategoryRepoCell.xib in Resources */,
-				714C2ED7221F83AE001F98FD /* LaunchScreen.storyboard in Resources */,
->>>>>>> Initial API and get Category Data
 				714C2ED4221F83AE001F98FD /* Assets.xcassets in Resources */,
 				714C2ED2221F83AC001F98FD /* Main.storyboard in Resources */,
+				040DFFE32231168D001B5503 /* CategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,7 +389,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SimpleDemoCleanArchitecture-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-IOSCookBook-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -484,7 +402,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SimpleDemoCleanArchitecture/Pods-SimpleDemoCleanArchitecture-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-IOSCookBook/Pods-IOSCookBook-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
@@ -527,7 +445,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleDemoCleanArchitecture/Pods-SimpleDemoCleanArchitecture-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOSCookBook/Pods-IOSCookBook-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -537,48 +455,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				714C2EEE221F89C7001F98FD /* MainViewController.swift in Sources */,
-				714C2F0D221F97AA001F98FD /* BaseRequest.swift in Sources */,
+				040DFFF522311925001B5503 /* HTTPStatusCode.swift in Sources */,
+				040DFFE722311783001B5503 /* BaseModel.swift in Sources */,
+				040DFFEC22311917001B5503 /* BaseRequest.swift in Sources */,
+				714C2EEE221F89C7001F98FD /* CategoryViewController.swift in Sources */,
 				714C2EE8221F8951001F98FD /* StoryBoards.swift in Sources */,
-				714C2F0F221F97F8001F98FD /* URLs.swift in Sources */,
-				714C2F15221F9979001F98FD /* BaseError.swift in Sources */,
-<<<<<<< HEAD
-				714C2F2C221FD76E001F98FD /* RepoDetailUseCase.swift in Sources */,
-				714C2F19221FB323001F98FD /* HTTPStatusCode.swift in Sources */,
-				714C2EF9221F9238001F98FD /* GithubRepo.swift in Sources */,
-				714C2F11221F983F001F98FD /* GithubRepoRequest.swift in Sources */,
-				714C2F1B221FC7D2001F98FD /* GithubRepoRepository.swift in Sources */,
-=======
-				714C2F0B221F9744001F98FD /* Constants.swift in Sources */,
-				714C2F2C221FD76E001F98FD /* RepoDetailUseCase.swift in Sources */,
-				714C2F19221FB323001F98FD /* HTTPStatusCode.swift in Sources */,
-				714C2EF9221F9238001F98FD /* CategoryRepo.swift in Sources */,
-				714C2F11221F983F001F98FD /* CategoryRepoRequest.swift in Sources */,
-				714C2F1B221FC7D2001F98FD /* CategoryRepoRepository.swift in Sources */,
-				714C2F08221F96F1001F98FD /* CustomRequestAdapter.swift in Sources */,
->>>>>>> Initial API and get Category Data
-				714C2F2E221FD77D001F98FD /* RepoDetailNavigator.swift in Sources */,
+				714C2F2C221FD76E001F98FD /* CategoryDetailUseCase.swift in Sources */,
+				040DFFED22311917001B5503 /* CategoryRepoRequest.swift in Sources */,
+				040DFFF922311995001B5503 /* APIService.swift in Sources */,
+				714C2F2E221FD77D001F98FD /* CategoryDetailNavigator.swift in Sources */,
+				040DFFF422311925001B5503 /* BaseError.swift in Sources */,
 				714C2EE3221F86C1001F98FD /* AppNavigator.swift in Sources */,
+				040DFFE12231168D001B5503 /* CategoryCell.swift in Sources */,
 				714C2EE5221F86D0001F98FD /* AppUseCase.swift in Sources */,
-				714C2F30221FD791001F98FD /* RepoDetailViewController.swift in Sources */,
-				714C2F2A221FD75F001F98FD /* RepoDetailViewModel.swift in Sources */,
+				714C2F30221FD791001F98FD /* CategoryDetailViewController.swift in Sources */,
+				714C2F2A221FD75F001F98FD /* CategoryDetailViewModel.swift in Sources */,
+				040DFFE622311783001B5503 /* Category.swift in Sources */,
 				714C2F25221FCD5D001F98FD /* ViewController+Rx.swift in Sources */,
-				714C2EF4221F8ED6001F98FD /* MainViewModel.swift in Sources */,
+				714C2EF4221F8ED6001F98FD /* CategoryViewModel.swift in Sources */,
 				714C2ECD221F83AC001F98FD /* AppDelegate.swift in Sources */,
-<<<<<<< HEAD
-				714C2F21221FCAC6001F98FD /* GithubRepoCell.swift in Sources */,
-				714C2F13221F988A001F98FD /* GithubRepoResponse.swift in Sources */,
-=======
-				714C2F21221FCAC6001F98FD /* CategoryRepoCell.swift in Sources */,
-				714C2F13221F988A001F98FD /* CategoryRepoResponse.swift in Sources */,
->>>>>>> Initial API and get Category Data
-				714C2F17221F9999001F98FD /* ErrorResponse.swift in Sources */,
-				714C2F02221F9461001F98FD /* APIService.swift in Sources */,
-				714C2EF0221F8EC1001F98FD /* MainNavigator.swift in Sources */,
+				714C2EF0221F8EC1001F98FD /* CategoryNavigator.swift in Sources */,
+				040DFFF322311925001B5503 /* ErrorResponse.swift in Sources */,
 				714C2F27221FCDE2001F98FD /* UIViewController+.swift in Sources */,
+				040DFFF72231192C001B5503 /* CategoryRepoRepository.swift in Sources */,
+				040DFFEF2231191E001B5503 /* CategoryRepoResponse.swift in Sources */,
+				041048A12237AB6500C947A3 /* UIImageView+Rx.swift in Sources */,
 				714C2EE1221F86B6001F98FD /* AppViewModel.swift in Sources */,
-				714C2F1D221FC8E4001F98FD /* BaseModel.swift in Sources */,
-				714C2EF2221F8ECA001F98FD /* MainUseCase.swift in Sources */,
+				040DFFE922311908001B5503 /* URLs.swift in Sources */,
+				714C2EF2221F8ECA001F98FD /* CategoryUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,17 +497,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-=======
-		714C2ED5221F83AE001F98FD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				714C2ED6221F83AE001F98FD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
->>>>>>> Initial API and get Category Data
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -664,10 +557,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-<<<<<<< HEAD
-				SWIFT_OBJC_BRIDGING_HEADER = "IOSCookBook/IOSCookBook-Bridging-Header.h";
-=======
->>>>>>> Initial API and get Category Data
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -721,10 +610,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-<<<<<<< HEAD
-				SWIFT_OBJC_BRIDGING_HEADER = "IOSCookBook/IOSCookBook-Bridging-Header.h";
-=======
->>>>>>> Initial API and get Category Data
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -732,16 +617,17 @@
 		};
 		714C2EDC221F83AE001F98FD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BD36DC1B11198D43E3DE2E5 /* Pods-SimpleDemoCleanArchitecture.debug.xcconfig */;
+			baseConfigurationReference = 418A44B110492466CF3F76DE /* Pods-IOSCookBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GCAT449K7M;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/IOSCookBook/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.IOSCookBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IOSCookBook/IOSCookBook-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -749,16 +635,17 @@
 		};
 		714C2EDD221F83AE001F98FD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37869304476713634AA3A366 /* Pods-SimpleDemoCleanArchitecture.release.xcconfig */;
+			baseConfigurationReference = 699372774AA708F0508A9C57 /* Pods-IOSCookBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GCAT449K7M;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/IOSCookBook/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.IOSCookBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IOSCookBook/IOSCookBook-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

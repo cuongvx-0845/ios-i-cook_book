@@ -1,15 +1,14 @@
 //
-//  MainViewModel.swift
+//  CategoryViewModel.swift
 
 import Foundation
-import MGArchitecture
 
-struct MainViewModel {
-    let navigator: MainNavigatorType
-    let useCase: MainUseCaseType
+struct CategoryViewModel {
+    let navigator: CategoryNavigatorType
+    let useCase: CategoryUseCaseType
 }
 
-extension MainViewModel: ViewModelType {
+extension CategoryViewModel: ViewModelType {
     struct Input {
         let loadTrigger: Driver<Void>
         let selectTrigger: Driver<IndexPath>
@@ -22,7 +21,7 @@ extension MainViewModel: ViewModelType {
         let indicator: Driver<Bool>
     }
     
-    func transform(_ input: MainViewModel.Input) -> MainViewModel.Output {
+    func transform(_ input: CategoryViewModel.Input) -> CategoryViewModel.Output {
         let indicator = ActivityIndicator()
         let error = ErrorTracker()
         
