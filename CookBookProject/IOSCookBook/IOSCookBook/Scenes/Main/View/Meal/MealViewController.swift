@@ -9,6 +9,7 @@ final class MealViewController: UIViewController, BindableType {
     private struct Constant {
         static let rowHeight: CGFloat = 232
         static let title = "Home"
+        static let headerHeight: CGFloat = 128
     }
     
     @IBOutlet private weak var tableView: UITableView!
@@ -21,24 +22,11 @@ final class MealViewController: UIViewController, BindableType {
     }
     
     private func configView() {
-        let headerView = HeaderTableViewCell()
-        
         title = Constant.title
         tableView.do {
             $0.register(cellType: MealCell.self)
             $0.rowHeight = Constant.rowHeight
-            $0.tableHeaderView = headerView
         }
-        configHeaderTableView()
-    }
-    
-    private func configHeaderTableView() {
-        let nibNameBody = UINib(nibName: "HeaderTableViewCell", bundle: nil)
-        tableView.register(nibNameBody, forCellReuseIdentifier: "HeaderTableViewCell")
-        guard let headerCell = tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell") as? HeaderTableViewCell else {
-            return
-        }
-        tableView.tableHeaderView = headerCell
     }
 }
 

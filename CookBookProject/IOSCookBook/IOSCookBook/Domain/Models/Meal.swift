@@ -1,12 +1,12 @@
 //
-//  Category.swift
+//  Meal.swift
 
 import Foundation
 import ObjectMapper
 
 struct FoodResource {
-    var ingredient: String
-    var measure: String
+    var ingredient = ""
+    var measure = ""
 }
 
 struct Constants {
@@ -51,7 +51,7 @@ extension Meal: BaseModel {
             var measure = ""
             ingredient <- map["strIngredient\(index)"]
             measure <- map["strMeasure\(index)"]
-            if ingredient != "" {
+            if ingredient.isEmpty {
                 resources.append(FoodResource(ingredient: ingredient, measure: measure))
             }
         }

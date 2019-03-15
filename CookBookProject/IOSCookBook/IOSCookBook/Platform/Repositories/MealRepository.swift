@@ -14,6 +14,6 @@ final class MealRepository: MealRepositoryType {
         return api.request(input: input)
             .map { (response: MealResponse) -> [Meal] in
                 return response.meals
-        }
+            }
     }
 }

@@ -94,7 +94,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="categoryNameLabel" destination="u6y-Lh-1uD" id="P4U-m3-C5p"/>
-                <outlet property="mealImage" destination="bfJ-UI-MC9" id="9n7-7R-LOn"/>
+                <outlet property="mealImageView" destination="bfJ-UI-MC9" id="9n7-7R-LOn"/>
                 <outlet property="mealNameLabel" destination="Qt1-Ve-A3I" id="fn7-Kf-kRl"/>
             </connections>
             <point key="canvasLocation" x="-137.5" y="510"/>

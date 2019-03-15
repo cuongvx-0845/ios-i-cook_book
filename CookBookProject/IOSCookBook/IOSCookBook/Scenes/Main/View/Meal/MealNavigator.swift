@@ -16,8 +16,8 @@ struct MealNavigator: MealNavigatorType {
         let useCase = MealDetailUseCase()
         let navigator = MealDetailNavigator(navigationController: navigationController)
         let viewModel = MealDetailViewModel(navigator: navigator,
-                                                useCase: useCase,
-                                                meal: meal)
+                                            useCase: useCase,
+                                            meal: meal)
         
         viewController.bindViewModel(to: viewModel)
         navigationController.pushViewController(viewController, animated: true)
