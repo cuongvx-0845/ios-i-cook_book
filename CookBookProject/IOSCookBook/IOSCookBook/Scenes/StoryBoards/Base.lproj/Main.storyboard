@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,14 +14,29 @@
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MealViewController" id="BYZ-38-t0r" customClass="MealViewController" customModule="IOSCookBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.88438585069444442" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Q8-Rx-gfh">
+                                <rect key="frame" x="15.5" y="0.0" width="344" height="618"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93785108429999997" green="0.94713673860000003" blue="0.94713673860000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Q8-Rx-gfh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EPj-5E-RuM"/>
+                            <constraint firstItem="4Q8-Rx-gfh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="344/375" id="Tby-BT-91P"/>
+                            <constraint firstItem="4Q8-Rx-gfh" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Zbn-MZ-IT9"/>
+                            <constraint firstItem="4Q8-Rx-gfh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="prE-Oy-YfK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="homegrey" selectedImage="homeorange" id="cVO-cx-iZU"/>
+                    <connections>
+                        <outlet property="tableView" destination="4Q8-Rx-gfh" id="aNc-CW-4fJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xjz-LC-Tte" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-524" y="1432"/>
+            <point key="canvasLocation" x="-524" y="1321"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="5fo-ST-RZm">
@@ -124,6 +140,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="keH-QU-Uar" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-580" y="-287"/>
+        </scene>
+        <!--Meal Detail View Controller-->
+        <scene sceneID="Xz3-gM-GxD">
+            <objects>
+                <viewController storyboardIdentifier="MealDetailViewController" id="zyN-xu-os7" customClass="MealDetailViewController" customModule="IOSCookBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7re-Oe-Lto">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3mF-GM-i6k">
+                                <rect key="frame" x="67" y="142" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHe-WX-WFd">
+                                <rect key="frame" x="166" y="359" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="INZ-T4-VEa"/>
+                    </view>
+                    <connections>
+                        <outlet property="avatarImageView" destination="3mF-GM-i6k" id="3z2-hL-g7b"/>
+                        <outlet property="nameLabel" destination="pHe-WX-WFd" id="7hS-0e-lUy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oxM-J6-oQR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1409" y="1321"/>
         </scene>
     </scenes>
     <resources>
